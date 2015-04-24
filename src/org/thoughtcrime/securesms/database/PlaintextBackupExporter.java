@@ -53,7 +53,6 @@ public class PlaintextBackupExporter {
     int count               = DatabaseFactory.getSmsDatabase(context).getMessageCount();
     XmlBackup.Writer writer = new XmlBackup.Writer(getPlaintextExportDirectoryPath()+ FILENAME, count);
 
-
     SmsMessageRecord record;
     EncryptingSmsDatabase.Reader reader = null;
     int skip                            = 0;
